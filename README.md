@@ -85,7 +85,6 @@
                 <img src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"> 
                 <img alt="Spring Boot" src ="https://img.shields.io/badge/springboot-6DB33F.svg?&style=for-the-badge&logo=SpringBoot&logoColor=white"/>
                 <img src="https://img.shields.io/badge/Spring Data JPA-6DB33F?style=for-the-badge&logoColor=white">
-                <img src="https://img.shields.io/badge/Spring Security-6DB33F?style=for-the-badge&logo=Spring Security&logoColor=white">
             </td>
         </tr>
                 <tr>
