@@ -1,11 +1,16 @@
 package com.vip.interviewpartner.domain.room.service;
 
 import com.vip.interviewpartner.common.dto.PageCustom;
+import com.vip.interviewpartner.domain.room.dto.response.RoomParticipantCount;
 import com.vip.interviewpartner.domain.room.dto.response.RoomResponseDTO;
 import com.vip.interviewpartner.domain.room.enitty.Room;
 import com.vip.interviewpartner.domain.room.enitty.RoomStatus;
 import com.vip.interviewpartner.domain.room.repository.RoomRepository;
 import com.vip.interviewpartner.domain.room_participant.repository.RoomParticipantRepository;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -32,15 +37,28 @@ public class RoomLookupService {
      */
     public PageCustom<RoomResponseDTO> getRoomsByStatus(RoomStatus roomStatus, Pageable pageable) {
         Page<Room> rooms = roomRepository.findByStatus(roomStatus, pageable);
-        Page<RoomResponseDTO> page = rooms.map(room -> RoomResponseDTO.of(room, getParticipantCount(roomStatus, room))); //TODO: 쿼리 개선 필요
+
+        List<Long> roomIds = rooms.stream()
+                .map(Room::getId)
+                .collect(Collectors.toList());
+
+        Map<Long, Integer> participantCountMap = (roomStatus == RoomStatus.OPEN)
+                ? getParticipantCount(roomIds)
+                : Collections.emptyMap();
+
+        Page<RoomResponseDTO> page = rooms.map(room ->
+                RoomResponseDTO.of(room, participantCountMap.getOrDefault(room.getId(), 0))
+        );
         return new PageCustom<>(page);
     }
 
-    private int getParticipantCount(RoomStatus roomStatus, Room room) {
-        int participantCount = 0;
-        if (roomStatus == RoomStatus.OPEN) {
-            participantCount = roomParticipantRepository.countByRoomIdAndCurrentlyJoined(room.getId());
-        }
-        return participantCount;
+    private Map<Long, Integer> getParticipantCount(List<Long> roomIds) {
+        List<RoomParticipantCount> counts = roomParticipantRepository.countCurrentlyJoinedByRoomIds(roomIds);
+
+        return counts.stream()
+                .collect(Collectors.toMap(
+                        RoomParticipantCount::roomId,
+                        c -> c.count().intValue()
+                ));
     }
 }
