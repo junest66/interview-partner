@@ -50,15 +50,6 @@
 
 ![화상모의면접](https://github.com/interview-partner/interview-partner/assets/121853214/6105263f-445e-4f49-bba4-40b865ce1868)
 
-## 🧡 팀원소개
-| **Backend** | **Backend** | **Frontend** | **Frontend** |
-|:-----------:|:-----------:|:------------:|:------------:|
-| **최준**    | **김지성**   | **정다은**   | **편지승**   |
-|                               <img src="https://avatars.githubusercontent.com/junest66" height=130 width=130></img>                                |                               <img src="https://avatars.githubusercontent.com/zs0057" height=130 width=130></img>                               |                              <img src="https://avatars.githubusercontent.com/Daeuning" height=130 width=130></img>                               |                               <img src="https://avatars.githubusercontent.com/vuswltmd" height=130 width=130></img>                               |
-|   <a href="https://github.com/junest66" target="_blank"><img src="https://img.shields.io/badge/GitHub-black.svg?&style=round&logo=github"/></a>    |   <a href="https://github.com/zs0057" target="_blank"><img src="https://img.shields.io/badge/GitHub-black.svg?&style=round&logo=github"/></a>   |  <a href="https://github.com/Daeuning" target="_blank"><img src="https://img.shields.io/badge/GitHub-black.svg?&style=round&logo=github"/></a>   |   <a href="https://github.com/vuswltmd" target="_blank"><img src="https://img.shields.io/badge/GitHub-black.svg?&style=round&logo=github"/></a>   |
-| <a href="mailto:chlwndks333@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-EA4335?style&logo=Gmail&logoColor=white"/></a> | <a href="mailto:soss4823@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-EA4335?style&logo=Gmail&logoColor=white"/></a> | <a href="mailto:happyjde3@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-EA4335?style&logo=Gmail&logoColor=white"/></a> | <a href="mailto:sseung7367@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-EA4335?style&logo=Gmail&logoColor=white"/></a> |
-
-
 ## ⚙️ 기술 스택
 
 <table>
@@ -104,6 +95,7 @@
                 <img src="https://img.shields.io/badge/Amazon%20EC2-FF9900?style=for-the-badge&logo=Amazon%20EC2&logoColor=white">
                 <img src="https://img.shields.io/badge/Nginx-014532?style=for-the-badge&logo=Nginx&logoColor=009639&">
                 <img src="https://img.shields.io/badge/Docker-2496ED?&logo=Docker&style=for-the-badge&logoColor=white">
+                <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=RabbitMQ&logoColor=white">
                 <img src="https://img.shields.io/badge/GitHub%20Registry-24292F?style=for-the-badge&logo=github&logoColor=white">
                 <img src="https://img.shields.io/badge/Amazon%20S3-569A31?style=for-the-badge&logo=Amazon%20S3&logoColor=white">
                 <img src="https://img.shields.io/badge/GitHub Actions-000000?style=for-the-badge&logo=github-actions">
@@ -136,7 +128,7 @@
 
 ## 🏛️ 시스템 아키텍쳐
 
-<img width="1000" alt="시스템 아키텍쳐" src="https://github.com/user-attachments/assets/ba75faa2-5ebe-4fec-8ff1-617673bae2a7">
+<img width="1000" alt="시스템 아키텍쳐" src="https://github.com/user-attachments/assets/04312aa6-7a3e-4297-8f88-2a6ebfdc493c">
 
 
 ## 🚗 배포 전략
@@ -144,7 +136,6 @@
 ![배포사진](https://github.com/interview-partner/interview-partner/assets/121853214/fd27058b-2e41-40a3-8837-64f4272c98ae)
 
 ## 💿 실행방법
-
 
 실행 방법에 대한 자세한 내용은 [GitHub Wiki(실행방법)](https://github.com/interview-partner/interview-partner/wiki/%EC%8B%A4%ED%96%89-%EB%B0%A9%EB%B2%95)에서 확인하실 수 있습니다.
 
@@ -155,3 +146,12 @@
 ## 📄 라이센스
 
 This project is licensed under the terms of the [Apache License 2.0](./LICENSE).
+
+## 🧡 팀원소개
+| **Backend** | **Backend** | **Frontend** | **Frontend** |
+|:-----------:|:-----------:|:------------:|:------------:|
+| **최준**    | **김지성**   | **정다은**   | **편지승**   |
+|                               <img src="https://avatars.githubusercontent.com/junest66" height=130 width=130></img>                                |                               <img src="https://avatars.githubusercontent.com/zs0057" height=130 width=130></img>                               |                              <img src="https://avatars.githubusercontent.com/Daeuning" height=130 width=130></img>                               |                               <img src="https://avatars.githubusercontent.com/vuswltmd" height=130 width=130></img>                               |
+|   <a href="https://github.com/junest66" target="_blank"><img src="https://img.shields.io/badge/GitHub-black.svg?&style=round&logo=github"/></a>    |   <a href="https://github.com/zs0057" target="_blank"><img src="https://img.shields.io/badge/GitHub-black.svg?&style=round&logo=github"/></a>   |  <a href="https://github.com/Daeuning" target="_blank"><img src="https://img.shields.io/badge/GitHub-black.svg?&style=round&logo=github"/></a>   |   <a href="https://github.com/vuswltmd" target="_blank"><img src="https://img.shields.io/badge/GitHub-black.svg?&style=round&logo=github"/></a>   |
+| <a href="mailto:chlwndks333@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-EA4335?style&logo=Gmail&logoColor=white"/></a> | <a href="mailto:soss4823@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-EA4335?style&logo=Gmail&logoColor=white"/></a> | <a href="mailto:happyjde3@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-EA4335?style&logo=Gmail&logoColor=white"/></a> | <a href="mailto:sseung7367@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-EA4335?style&logo=Gmail&logoColor=white"/></a> |
+
