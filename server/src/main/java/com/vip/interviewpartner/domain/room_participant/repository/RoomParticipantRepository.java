@@ -2,13 +2,13 @@ package com.vip.interviewpartner.domain.room_participant.repository;
 
 import com.vip.interviewpartner.domain.room.dto.response.RoomParticipantCount;
 import com.vip.interviewpartner.domain.room_participant.entity.RoomParticipant;
-import io.lettuce.core.dynamic.annotation.Param;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
 /**
  * RoomParticipant 엔티티에 대한 데이터 접근 리포지토리입니다.
